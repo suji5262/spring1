@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 // 연, 월, 일을 입력하면 요일을 알려주는 프로그램
 @Controller
-public class YoilTellerMVC { 
+public class YoilTellerMVC2 { 
 //		http://localhost:8080/ch2/getYoilMVC?year=2022&month=11&day=17
 	@ExceptionHandler
 	public String chtcher(Exception ex) {
@@ -20,7 +20,7 @@ public class YoilTellerMVC {
 		return "yoilError";
 	}
 	
-	@RequestMapping("/getYoilMVC")
+	@RequestMapping("/getYoilMVC2")
 //	1. public void main(HttpServletRequest request, HttpServletResponse response) throws IOException{
 //	3. public String main(int year, int month, int day, Model m) throws IOException{
 //	2. public void main(int year, int month, int day, Model model) throws IOException{

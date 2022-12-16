@@ -11,32 +11,32 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 
-// í•„í„°ë¥¼ ì ìš©í•  ìš”ì²­ì˜ íŒ¨í„´ ì§€ì • - ëª¨ë“  ìš”ì²­ì— í•„í„°ë¥¼ ì ìš©.
-@WebFilter(urlPatterns="/*") // í•„í„°ë¥¼ ë“±ë¡í•˜ëŠ” ì—ë„ˆí…Œì´ì…˜ - URL = ì–´ë–¤ ìš”ì²­ì— í•„í„°ë¥¼ ì ìš©í•  ê²ƒì¸ì§€?
+// ÇÊÅÍ¸¦ Àû¿ëÇÒ ¿äÃ»ÀÇ ÆĞÅÏ ÁöÁ¤ - ¸ğµç ¿äÃ»¿¡ ÇÊÅÍ¸¦ Àû¿ë.
+@WebFilter(urlPatterns="/*") // ÇÊÅÍ¸¦ µî·ÏÇÏ´Â ¿¡³ÊÅ×ÀÌ¼Ç - URL = ¾î¶² ¿äÃ»¿¡ ÇÊÅÍ¸¦ Àû¿ëÇÒ °ÍÀÎÁö?
 public class PerformanceFilter implements Filter {
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
-		// ì´ˆê¸°í™” ì‘ì—…
+		// ÃÊ±âÈ­ ÀÛ¾÷
 	}
 
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-		// 1. ì „ì²˜ë¦¬ ì‘ì—…
+		// 1. ÀüÃ³¸® ÀÛ¾÷
 		long startTime = System.currentTimeMillis();
 
-		// 2. ì„œë¸”ë¦¿ ë˜ëŠ” ë‹¤ìŒ í•„í„°ë¥¼ í˜¸ì¶œ
-		chain.doFilter(request, response);
-		// ê³ ì •
-
-		// 3. í›„ì²˜ë¦¬ ì‘ì—…
+		// 2. ¼­ºí¸´ ¶Ç´Â ´ÙÀ½ ÇÊÅÍ¸¦ È£Ãâ
+		chain.doFilter(request, response); 
+		// °íÁ¤
+		
+		// 3. ÈÄÃ³¸® ÀÛ¾÷
 		System.out.print("["+((HttpServletRequest)request).getRequestURI()+"]");
-		System.out.println(" ì†Œìš”ì‹œê°„="+(System.currentTimeMillis()-startTime)+"ms");
+		System.out.println(" ¼Ò¿ä½Ã°£="+(System.currentTimeMillis()-startTime)+"ms");
 	}
 
 	@Override
 	public void destroy() {
-		// ì •ë¦¬ ì‘ì—…
+		// Á¤¸® ÀÛ¾÷
 	}
 
 }

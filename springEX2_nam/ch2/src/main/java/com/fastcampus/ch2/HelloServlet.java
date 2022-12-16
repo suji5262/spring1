@@ -3,6 +3,7 @@ package com.fastcampus.ch2;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,24 +13,24 @@ public class HelloServlet extends HttpServlet {
 
 	@Override
 	public void init() throws ServletException {
-		// ì„œë¸”ë¦¿ì´ ì´ˆê¸°í™”ë  ë•Œ ìë™ í˜¸ì¶œë˜ëŠ” ë©”ì„œë“œ
-		// 1. ì„œë¸”ë¦¿ì˜ ì´ˆê¸°í™” ì‘ì—… ë‹´ë‹¹
+		// ¼­ºí¸´ÀÌ ÃÊ±âÈ­µÉ ¶§ ÀÚµ¿ È£ÃâµÇ´Â ¸Ş¼­µå
+		// 1. ¼­ºí¸´ÀÇ ÃÊ±âÈ­ ÀÛ¾÷ ´ã´ç
 		System.out.println("[HelloServlet] init() is called.");
 	}
-
+	
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		//1. ì…ë ¥
-		//2. ì²˜ë¦¬
-		//3. ì¶œë ¥
+		//1. ÀÔ·Â
+		//2. Ã³¸®
+		//3. Ãâ·Â
 		System.out.println("[HelloServlet] service() is called.");
 	}
 
 	@Override
 	public void destroy() {
-		//3. ë’·ì •ë¦¬ - ì„œë¸”ë¦¿ì´ ë©”ëª¨ë¦¬ì—ì„œ ì œê±°ë  ë•Œ ì„œë¸”ë¦¿ ì»¨í…Œì´ë„ˆì— ì˜í•´ì„œ ìë™ í˜¸ì¶œ
+		//3. µŞÁ¤¸® - ¼­ºí¸´ÀÌ ¸Ş¸ğ¸®¿¡¼­ Á¦°ÅµÉ ¶§ ¼­ºí¸´ ÄÁÅ×ÀÌ³Ê¿¡ ÀÇÇØ¼­ ÀÚµ¿ È£Ãâ
 		System.out.println("[HelloServlet] destroy() is called.");
-		// ìë™ ë¦¬ë¡œë“œ - í”„ë¡œê·¸ë¨ì´ ë°”ë€Œë©´ í†°ìº£ì´ ë¦¬ìŠ¤íƒ€íŠ¸, ê¸°ì¡´ì— ìˆëŠ” HelloServletì„ ë‚´ë¦¬ê³  destroyê°€ í˜¸ì¶œ ë¨
+		// ÀÚµ¿ ¸®·Îµå - ÇÁ·Î±×·¥ÀÌ ¹Ù²î¸é ÅèÄ¹ÀÌ ¸®½ºÅ¸Æ®, ±âÁ¸¿¡ ÀÖ´Â HelloServletÀ» ³»¸®°í destroy°¡ È£Ãâ µÊ
 
 	}
 

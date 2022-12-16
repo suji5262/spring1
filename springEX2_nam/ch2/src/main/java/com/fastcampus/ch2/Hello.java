@@ -3,25 +3,25 @@ package com.fastcampus.ch2;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-//1. я┐╜я┐╜я┐╜я┐╜ ╚гя┐╜т░бя┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜╬▒╫╖я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜
+//1. ┐°░▌ ╚г├т░б┤╔╟╤ ╟┴╖╬▒╫╖е└╕╖╬ ╡ю╖╧
 @Controller
 public class Hello {
-	int iv = 10; // я┐╜╬╜я┐╜я┐╜╧╜я┐╜ я┐╜я┐╜я┐╜я┐╜
-	static int cv = 20; // static я┐╜я┐╜я┐╜я┐╜
+	int iv = 10; // └╬╜║┼╧╜║ ║п╝Ў
+	static int cv = 20; // static ║п╝Ў
 	
-	//2. URLя┐╜я┐╜ я┐╜▐╝я┐╜я┐╜х╕ж я┐╜я┐╜я┐╜я┐╜
+	//2. URL░· ╕▐╝н╡х╕ж ┐м░с
 	@RequestMapping("/hello")
-	private void main() { // я┐╜╬╜я┐╜я┐╜╧╜я┐╜ я┐╜▐╝я┐╜я┐╜я┐╜ - iv, cvя┐╜я┐╜ я┐╜╤┤я┐╜ я┐╜я┐╜ы░бя┐╜я┐╜
-		System.out.println(" Hello - privata "); // я┐╜я┐╜─╣ я┐╜▄╝╓┐я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜
+	private void main() { // └╬╜║┼╧╜║ ╕▐╝н╡х - iv, cv╕ж ╡╤┤┘ ╗ч┐ы░б┤╔
+		System.out.println(" Hello - privata "); // ┼ш─╣ ─▄╝╓┐б ├т╖┬╟╘
 //		System.out.println(iv); //ok
 		System.out.println(cv); //ok 
 	}
 	
-	public static void main2() {// static я┐╜▐╝я┐╜я┐╜я┐╜ - cvя┐╜я┐╜ я┐╜я┐╜ы░бя┐╜я┐╜
-//		System.out.println(iv); // я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜
+	public static void main2() {// static ╕▐╝н╡х - cv╕╕ ╗ч┐ы░б┤╔
+//		System.out.println(iv); // ┐б╖п│▓
 		System.out.println(cv); //ok
 
 	}
 
 }
-//System.out.println > я┐╜▄╝╓┐я┐╜ я┐╜я┐╜я┐╜
+//System.out.println > ─▄╝╓┐б ├т╖┬

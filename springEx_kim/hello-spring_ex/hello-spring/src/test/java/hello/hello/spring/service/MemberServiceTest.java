@@ -1,6 +1,7 @@
 package hello.hello.spring.service;
 
 import hello.hello.spring.domain.Member;
+import hello.hello.spring.repository.MemberRepository;
 import hello.hello.spring.repository.MemoryMemberRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -8,6 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.fail;
 
 class MemberServiceTest {
 

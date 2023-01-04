@@ -2,7 +2,9 @@ package hello.hello.spring.service;
 
 import hello.hello.spring.domain.Member;
 import hello.hello.spring.repository.MemberRepository;
+import hello.hello.spring.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
@@ -17,6 +19,7 @@ public class MemberService {
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     } // 외부에서 넣어주도록 바꿔줘
+    // 생성자를 통해 들어옮 -> 생성자 주입
 
     public Long join(Member member) {
 

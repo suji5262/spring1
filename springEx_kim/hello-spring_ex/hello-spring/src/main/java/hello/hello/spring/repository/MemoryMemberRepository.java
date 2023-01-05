@@ -17,6 +17,7 @@ public class MemoryMemberRepository implements MemberRepository {
         store.put(member.getId(), member);
         return member;
     }
+    // sequence -> DB에 들어갔을 때 자동으로 증가 될 수 있게
 
     @Override
     public Optional<Member> findById(Long id) {

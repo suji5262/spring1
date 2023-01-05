@@ -13,3 +13,5 @@ public interface MemberRepository {
     // findBy~ 값이 없으면 null로 반환하는 방법
     List<Member> findAll();
 }
+
+// 회원 저장 역할

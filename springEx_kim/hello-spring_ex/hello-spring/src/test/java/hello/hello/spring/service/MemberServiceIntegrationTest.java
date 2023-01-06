@@ -6,31 +6,28 @@ import hello.hello.spring.repository.MemoryMemberRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.fail;
 
-class MemberServiceTest {
+@SpringBootTest
+@Transactional
+class MemberServiceIntegrationTest {
 
-//    MemberService memberService = new MemberService();
-//    MemoryMemberRepository memberRepository = new MemoryMemberRepository();
+    @Autowired
     MemberService memberService;
-    MemoryMemberRepository memberRepository;
 
-    @BeforeEach
-    public void beforeEach() {
-        memberRepository = new MemoryMemberRepository();
-        memberService = new MemberService(memberRepository);
-    }
+    @Autowired
+    MemberRepository memberRepository;
 
-    @AfterEach
-    public void afterEach() {
-        memberRepository.clearStore();
-    } // 돌때마다 메모리 클리어됨
+    //멤버 컨테이너한테 요청해야함
+
 
     @Test
-    void 회원() {
+    void 회원가입() {
 
         //given
         Member member = new Member();
@@ -60,25 +57,6 @@ class MemberServiceTest {
 
         assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");
 
-        /*        memberService.join(member1);
-        try {
-            memberService.join(member2);
-            fail();
-        } catch (IllegalStateException e) {
-            assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");*/
 
-        }
-
-        //then
-
-
-    @Test
-    void findMembers() {
-    }
-
-    @Test
-    void findOne() {
     }
 }
-
-// 순수한 단위 test 가 더 좋음

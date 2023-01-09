@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Optional;
 
 public class JpaMemberRepository implements MemberRepository {
-    private final EntityManager em; //jpa 는 엔티티 매니저라는 것으로 동작함
 
+    private final EntityManager em; //jpa 는 엔티티 매니저라는 것으로 동작함
     public JpaMemberRepository(EntityManager em) {
         this.em = em;
     }
@@ -22,13 +22,16 @@ public class JpaMemberRepository implements MemberRepository {
 
     @Override
     public Optional<Member> findById(Long id) {
-        Member member = em.find(Member.class, id); // 조회타입, 식별자 pk 만 넣으면 됨
+        Member member = em.find(Member.class, id);// 조회타입, 식별자 pk 만 넣으면 됨
         return Optional.ofNullable(member);
     }
 
     @Override
     public Optional<Member> findByName(String name) {
-        return Optional.empty();
+        List<Member> result = em.createQuery("select m from Member m where m.name = :name", Member.class)
+                .setParameter("name", name)
+                .getResultList();
+        return result.stream().findAny();
     }
 
     @Override

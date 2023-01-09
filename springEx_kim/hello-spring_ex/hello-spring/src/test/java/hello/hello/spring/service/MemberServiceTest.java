@@ -30,7 +30,7 @@ class MemberServiceTest {
     } // 돌때마다 메모리 클리어됨
 
     @Test
-    void 회원() {
+    void 회원가입() {
 
         //given
         Member member = new Member();

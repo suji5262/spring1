@@ -6,8 +6,7 @@ import javax.persistence.*;
 @Entity
 public class Member {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // DB가 알아서 생성해주는 것 -> IDENTITY
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) // DB가 알아서 생성해주는 것 -> IDENTITY
 
     private Long id; // 시스템이 저장하는 아이디
 

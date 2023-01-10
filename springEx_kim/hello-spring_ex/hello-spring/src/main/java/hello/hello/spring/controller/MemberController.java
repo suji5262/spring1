@@ -28,6 +28,7 @@ public class MemberController {
     @Autowired
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
+        System.out.println("memberService = " + memberService.getClass());
     } // 생성자 호출
     // Autowired > 스프링에 있는 memberService 를 스프링이 연결시킴 > 의존관계 주입
     // 생성자를 통해 -> memberService -> MemberController 에 주입됨

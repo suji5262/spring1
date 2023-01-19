@@ -11,8 +11,6 @@
        http://mybatis.org/schema/mybatis-spring.xsd">
 
 
-    <context:component-scan base-package="org.zerock.springex.sample"/>
-
     <bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
         <property name="driverClassName" value="org.mariadb.jdbc.Driver"></property>
         <property name="jdbcUrl" value="jdbc:mariadb://localhost:3307/webdb"></property>
@@ -39,8 +37,10 @@
 
     <mybatis:scan base-package="org.zerock.springex.mapper"></mybatis:scan>
 
+    <context:component-scan base-package="org.zerock.springex.config"/>
+    <context:component-scan base-package="org.zerock.springex.service"/>
 
-    <!--    <bean class="org.zerock.springex.sample.SampleService"/>-->
-<!--    <bean class="org.zerock.springex.sample.SampleDAO"></bean>-->
+
+
 
 </beans>

@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
 
     <title>Hello, world!</title>
 </head>
@@ -22,7 +24,9 @@
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">Navbar</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -50,70 +54,79 @@
                         <h5 class="card-title">Special title treatment</h5>
                         <table class="table">
                             <thead>
-                            <tr>
-                                <th scope="col">Tno</th>
-                                <th scope="col">Title</th>
-                                <th scope="col">Writer</th>
-                                <th scope="col">DueDate</th>
-                                <th scope="col">Finished</th>
-                            </tr>
+                                <tr>
+                                    <th scope="col">Tno</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Writer</th>
+                                    <th scope="col">DueDate</th>
+                                    <th scope="col">Finished</th>
+                                </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${dtoList}" var="dto">
-                                <tr>
-                                    <th scope="row"><c:out value="${dto.tno}"/></th>
-                                    <td><c:out value="${dto.title}"/></td>
-                                    <td><c:out value="${dto.writer}"/></td>
-                                    <td><c:out value="${dto.dueDate}"/></td>
-                                    <td><c:out value="${dto.finished}"/></td>
-                                </tr>
-                            </c:forEach>
-
-
+                                <c:forEach items="${responseDTO.dtoList}" var="dto">
+                                    <tr>
+                                        <th scope="row"><c:out value="${dto.tno}"/></th>
+                                        <td>
+                                            <a href="/todo/read?tno=${dto.tno}&${pageRequestDTO.link}"
+                                               class="text-decoration-none" data-tno="${dto.tno}">
+                                                <c:out value="${dto.title}"/>
+                                            </a>
+                                        </td>
+                                        <td><c:out value="${dto.title}"/></td>
+                                        <td><c:out value="${dto.writer}"/></td>
+                                        <td><c:out value="${dto.dueDate}"/></td>
+                                        <td><c:out value="${dto.finished}"/></td>
+                                    </tr>
+                                </c:forEach>
                             </tbody>
                         </table>
 
-<%--                        <form action="/todo/register" method="post">--%>
-<%--                            <div class="input-group mb-3">--%>
-<%--                                <span class="input-group-text">Title</span>--%>
-<%--                                <input type="text" name="title" class="form-control" placeholder="Title">--%>
-<%--                            </div>--%>
+                        <div class="float-end">
+                            <ul class="pagination flex-wrap">
+                                <c:if test="${responseDTO.prev}">
+                                    <li class="page-item">
+                                        <a class="page-link" data-num="${responseDTO.start -1}">Previous</a>
+                                    </li>
+                                </c:if>
 
-<%--                            <div class="input-group mb-3">--%>
-<%--                                <span class="input-group-text">DueDate</span>--%>
-<%--                                <input type="date" name="dueDate" class="form-control" placeholder="Writer">--%>
-<%--                            </div>--%>
+                                <c:forEach begin="${responseDTO.start}" end="${responseDTO.end}" var="num">
+                                    <li class="page-item ${responseDTO.page == num? "active":""} ">
+                                        <a class="page-link"  data-num="${num}">${num}</a></li>
+                                </c:forEach>
 
-<%--                            <div class="input-group mb-3">--%>
-<%--                                <span class="input-group-text">Writer</span>--%>
-<%--                                <input type="text" name="writer" class="form-control" placeholder="Writer">--%>
-<%--                            </div>--%>
+                                <c:if test="${responseDTO.next}">
+                                    <li class="page-item">
+                                        <a class="page-link" data-num="${responseDTO.end +1}">Next</a>
+                                    </li>
+                                </c:if>
+                            </ul>
+                        </div>
+                            <script>
 
-<%--                            <div class="my-4">--%>
-<%--                                <div class="float-end">--%>
-<%--                                    <button type="submit" class="btn btn-primary">Submit</button>--%>
-<%--                                    <button type="result" class="btn btn-secondary">Reset</button>--%>
-<%--                                </div>--%>
-<%--                            </div>--%>
-<%--                        </form>--%>
+                                document.querySelector(".pagination").addEventListener("click", function (e) {
+                                    e.preventDefault()
+                                    e.stopPropagation()
 
-                        <script>
-                            const serverValidResult = {}
-                            <c:forEach items="${errors}" var="error">
-                            serverValidResult['${error.getField()}'] = '${error.defaultMessage}'
-                            </c:forEach>
-                            console.log(serverValidResult)
-                        </script>
+                                    const target = e.target
 
+                                    if (target.tagName !== 'A') {
+                                        return
+                                    }
+                                    const num = target.getAttribute("data-num")
+
+                                    self.location = `/todo/list?page=\${num}` // 백틱(``)을 이용해서 탬플릭 처리
+                                },false)
+
+                            </script>
                     </div>
-
                 </div>
             </div>
         </div>
 
     </div>
     <div class="row content">
-<%--        <h1>Content</h1>--%>
+
+        <h1>Content</h1>
     </div>
     <div class="row footer">
         <!--<h1>Footer</h1>-->

@@ -11,8 +11,6 @@ import org.zerock.b01.domain.QBoard;
 
 import java.util.List;
 
-import static org.aspectj.apache.bcel.Constants.types;
-
 public class BoardSearchImpl extends QuerydslRepositorySupport implements BoardSearch{
 
     public BoardSearchImpl() {

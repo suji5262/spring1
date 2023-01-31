@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.zerock.b01.domain.Board;
 import org.zerock.b01.dto.BoardDTO;
+import org.zerock.b01.dto.BoardListReplyCountDTO;
 import org.zerock.b01.dto.PageRequestDTO;
 import org.zerock.b01.dto.PageResponseDTO;
 import org.zerock.b01.service.BoardService;
@@ -25,16 +27,29 @@ public class BoardController {
 
     private final BoardService boardService;
 
-    @GetMapping("/list")
-    public void list(PageRequestDTO pageRequestDTO, Model model){
+//    @GetMapping("/list")
+//    public void list(PageRequestDTO pageRequestDTO, Model model){
+//
+//        PageResponseDTO<BoardDTO> responseDTO = boardService.list(pageRequestDTO);
+//
+//        log.info(responseDTO);
+//
+//        model.addAttribute("responseDTO", responseDTO);
+//
+//    }
+@GetMapping("/list")
+public void list(PageRequestDTO pageRequestDTO, Model model){
 
-        PageResponseDTO<BoardDTO> responseDTO = boardService.list(pageRequestDTO);
+//    PageResponseDTO<BoardDTO> responseDTO = boardService.list(pageRequestDTO);
 
-        log.info(responseDTO);
+    PageResponseDTO<BoardListReplyCountDTO> responseDTO =
+            boardService.listWithReplyCount(pageRequestDTO);
 
-        model.addAttribute("responseDTO", responseDTO);
+    log.info(responseDTO);
 
-    }
+    model.addAttribute("responseDTO", responseDTO);
+
+}
 
     @GetMapping("/register")
     public void registerGET(){

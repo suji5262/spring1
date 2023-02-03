@@ -14,12 +14,11 @@ import java.util.Set;
 @NoArgsConstructor
 @ToString(exclude = "imageSet")
 public class Board extends BaseEntity{
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long bno;
 
-    @Column(length = 500, nullable = false) //컬럼의 길이와 null허용여부
+    @Column(length = 500, nullable = false) //컬럼의 길이와 null 허용여부
     private String title;
 
     @Column(length = 2000, nullable = false)
@@ -45,7 +44,7 @@ public class Board extends BaseEntity{
     @BatchSize(size = 20)
     private Set<BoardImage> imageSet = new HashSet<>();
 
-    public void addImage(String uuid, String fileName) {
+    public void addImage(String uuid, String fileName){
 
         BoardImage boardImage = BoardImage.builder()
                 .uuid(uuid)
@@ -62,6 +61,5 @@ public class Board extends BaseEntity{
 
         this.imageSet.clear();
     }
-
 
 }

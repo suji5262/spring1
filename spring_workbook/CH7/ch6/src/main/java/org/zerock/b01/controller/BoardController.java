@@ -102,9 +102,9 @@ public void list(PageRequestDTO pageRequestDTO, Model model){
 
     @PostMapping("/modify")
     public String modify( PageRequestDTO pageRequestDTO,
-                          @Valid BoardDTO boardDTO,
-                          BindingResult bindingResult,
-                          RedirectAttributes redirectAttributes){
+                            @Valid BoardDTO boardDTO,
+                            BindingResult bindingResult,
+                            RedirectAttributes redirectAttributes){
 
         log.info("board modify post......." + boardDTO);
 

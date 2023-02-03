@@ -15,4 +15,7 @@ public interface BoardRepository extends JpaRepository<Board, Long>, BoardSearch
     @Query("select b from Board b where b.bno =:bno")
     Optional<Board> findByIdWithImages(@Param("bno") Long bno);
 
+//    @EntityGraph(attributePaths = {"imageSet"})
+//    @Query("select b from Board b where b.bno =:bno")
+//    Optional<Board> findByIdWithImages(Long bno);
 }

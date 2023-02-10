@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -20,6 +21,7 @@ import org.zerock.b01.service.BoardService;
 import javax.validation.Valid;
 import java.io.File;
 import java.nio.file.Files;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -76,6 +78,7 @@ public class BoardController {
     @PreAuthorize("hasRole('USER')")
     @GetMapping("/register")
     public void registerGET(){
+
     }
 
     @PostMapping("/register")
@@ -123,11 +126,13 @@ public class BoardController {
 
     }
 
+    @PreAuthorize("principal.username == #boardDTO.writer")
     @PostMapping("/modify")
     public String modify( @Valid BoardDTO boardDTO,
                           BindingResult bindingResult,
                           PageRequestDTO pageRequestDTO,
                           RedirectAttributes redirectAttributes){
+
 
         log.info("board modify post......." + boardDTO);
 
@@ -167,8 +172,10 @@ public class BoardController {
 //    }
 
 
+    @PreAuthorize("principal.username == #boardDTO.writer")
     @PostMapping("/remove")
     public String remove(BoardDTO boardDTO, RedirectAttributes redirectAttributes) {
+
 
         Long bno  = boardDTO.getBno();
         log.info("remove post.. " + bno);

@@ -18,7 +18,7 @@ public class HelloController {
 
     @GetMapping("hello-mvc")
     public String helloMvc(@RequestParam("name")
-                               String name, Model model) {
+                           String name, Model model) {
         model.addAttribute("name", name);
         return "hello-template";
     }
@@ -26,7 +26,7 @@ public class HelloController {
     @GetMapping("hello-string")
     @ResponseBody
     public String helloString(@RequestParam("name")
-                                  String name) {
+                              String name) {
         return "hello " + name; // "hello spring(name)"
     }
 

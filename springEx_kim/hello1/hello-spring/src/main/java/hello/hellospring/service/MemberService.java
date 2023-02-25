@@ -19,12 +19,26 @@ public class MemberService {
     } // 외부에서 넣어주도록
     // 생성자를 호출
 
+
     /**
      * 회원가입 - join
      */
     public Long join(Member member) { // 중복회원 확인 후 가입
 
-        // 같은 이름이 있는 중복회원은 x
+//        long start = System.currentTimeMillis();// 시간측정
+
+//        try {
+//            validateDuplicateMember(member);
+//            memberRepository.save(member);
+//            return member.getId();
+//        } finally {
+//            long finish = System.currentTimeMillis();
+//            long timeMs = finish - start;
+//            System.out.println("join = " + timeMs + "ms");
+//
+//        }
+
+//         같은 이름이 있는 중복회원은 x
         validateDuplicateMember(member); // 중복회원 검증
         memberRepository.save(member);
         return member.getId(); // id 값을 반환
@@ -43,6 +57,16 @@ public class MemberService {
      */
     public List<Member> findMembers() {
         return memberRepository.findAll();
+
+//        long start = System.currentTimeMillis();
+//        try {
+//            return memberRepository.findAll();
+//        } finally {
+//            long finish = System.currentTimeMillis();
+//            long timeMs = finish - start;
+//            System.out.println("findMembers = " + timeMs + "ms");
+//        }
+
     }
 
     public Optional<Member> findOne(Long memberId) {

@@ -30,6 +30,7 @@ public class MemberController {
     @Autowired
     public MemberController(MemberService memberService) { // 생성자 주입
         this.memberService = memberService;
+        System.out.println("memberService = " + memberService.getClass());
     }
 
 

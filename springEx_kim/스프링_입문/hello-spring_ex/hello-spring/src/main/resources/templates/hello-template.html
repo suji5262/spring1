@@ -1,0 +1,8 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<p th:text="'hello ' + ${name}">hello! empty</p>
+</body>
+</html>
+
+<!-- 템플릿 엔진 > html을 변경하는 것 -->
+<!-- 실제 서버를 돌리면 (hello! empty) 값이 > ("'hello ' + ${name}")값으로 치환됨! -->

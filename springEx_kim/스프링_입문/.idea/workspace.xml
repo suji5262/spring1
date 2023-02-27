@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aaec6b8b-1072-4414-83c7-e00ae7e0e52e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/sql/ddl.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/java/hello/hello/spring/HelloSpringApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/java/hello/hello/spring/SpringConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/java/hello/hello/spring/aop/TimeTraceAop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/java/hello/hello/spring/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/java/hello/hello/spring/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/java/hello/hello/spring/controller/MemberController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/java/hello/hello/spring/controller/MemberForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/java/hello/hello/spring/domain/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/java/hello/hello/spring/repository/JDBCMemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/java/hello/hello/spring/repository/JDBCTemplateMemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/java/hello/hello/spring/repository/JpaMemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/java/hello/hello/spring/repository/MemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/java/hello/hello/spring/repository/MemoryMemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/java/hello/hello/spring/repository/SpringDataJpaMemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/java/hello/hello/spring/service/MemberService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/resources/static/hello-static.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/resources/templates/hello-template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/resources/templates/hello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/resources/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/resources/templates/members/createMemberForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/main/resources/templates/members/memberList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/test/java/hello/hello/spring/HelloSpringApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/test/java/hello/hello/spring/repository/MemoryMemberRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/test/java/hello/hello/spring/service/MemberServiceIntegrationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-spring_ex/hello-spring/src/test/java/hello/hello/spring/service/MemberServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/sql/ddl.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/java/hello/hellospring/HelloSpringApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/java/hello/hellospring/SpringConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/java/hello/hellospring/aop/TimeTraceAop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/java/hello/hellospring/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/java/hello/hellospring/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/java/hello/hellospring/controller/MemberController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/java/hello/hellospring/controller/MemberForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/java/hello/hellospring/domain/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/java/hello/hellospring/repository/JdbcMemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/java/hello/hellospring/repository/JdbcTemplateMemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/java/hello/hellospring/repository/JpaMemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/java/hello/hellospring/repository/MemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/java/hello/hellospring/repository/MemoryMemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/java/hello/hellospring/repository/SpringDataJpaMemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/java/hello/hellospring/service/MemberService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/resources/static/hello-static.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/resources/templates/hello-template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/resources/templates/hello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/resources/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/resources/templates/members/createMemberForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/main/resources/templates/members/memberList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/test/java/hello/hellospring/HelloSpringApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/test/java/hello/hellospring/repository/MemoryMemberRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/test/java/hello/hellospring/service/MemberServiceIntegrationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/test/java/hello/hellospring/service/MemberServiceIntegrationTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello1/hello-spring/src/test/java/hello/hellospring/service/MemberServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/.idea/helloEx.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/main/java/hello/core/CoreApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/main/java/hello/core/Member/Grade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/main/java/hello/core/Member/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/main/java/hello/core/Member/MemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/main/java/hello/core/Member/MemberService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/main/java/hello/core/Member/MemberServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/main/java/hello/core/Member/MemoryMemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/main/java/hello/core/MemberApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/main/java/hello/core/OrderApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/main/java/hello/core/discount/DiscountPolicy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/main/java/hello/core/discount/FixDiscountPolicy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/main/java/hello/core/order/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/main/java/hello/core/order/OrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/main/java/hello/core/order/OrderServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/test/java/hello/core/CoreApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/test/java/hello/core/member/MemberServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloEx/core/src/test/java/hello/core/order/OrderServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/java/hello/login/ItemServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/java/hello/login/TestDataInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/java/hello/login/domain/item/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/java/hello/login/domain/item/ItemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/java/hello/login/domain/item/SaveCheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/java/hello/login/domain/item/UpdateCheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/java/hello/login/domain/login/LoginService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/java/hello/login/domain/member/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/java/hello/login/domain/member/MemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/java/hello/login/web/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/java/hello/login/web/item/ItemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/java/hello/login/web/item/form/ItemSaveForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/java/hello/login/web/item/form/ItemUpdateForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/java/hello/login/web/login/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/java/hello/login/web/login/LoginForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/java/hello/login/web/member/MemberController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/java/hello/login/web/session/SessionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/resources/errors.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/resources/messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/resources/messages_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/resources/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/resources/templates/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/resources/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/resources/templates/items/addForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/resources/templates/items/editForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/resources/templates/items/item.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/resources/templates/items/items.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/resources/templates/login/loginForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/resources/templates/loginHome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/main/resources/templates/members/addMemberForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/test/java/hello/login/ItemServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/test/java/hello/login/domain/item/ItemRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/test/java/hello/login/message/MessageSourceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/test/java/hello/login/validation/BeanValidationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/test/java/hello/login/validation/MessageCodesResolverTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/login-start/src/test/java/hello/login/web/session/SessionManagerTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2MHiZAFJbI3KEsbLSEg091TQhh9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aaec6b8b-1072-4414-83c7-e00ae7e0e52e" name="Changes" comment="" />
+      <created>1677430964174</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677430964174</updated>
+      <workItem from="1677430965353" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

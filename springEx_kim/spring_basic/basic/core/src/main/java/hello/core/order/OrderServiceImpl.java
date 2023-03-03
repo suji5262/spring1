@@ -15,7 +15,6 @@ public class OrderServiceImpl implements OrderService {
 
 //    private final DiscountPolicy discountPolicy = new RateDiscountPolicy();
 
-
     public OrderServiceImpl(
             MemberRepository memberRepository,
             DiscountPolicy discountPolicy) { // 생성자 주입
